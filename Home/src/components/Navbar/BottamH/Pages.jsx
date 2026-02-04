@@ -32,7 +32,7 @@ const Pages = () => {
       onMouseEnter={showMenu}
       onMouseLeave={hideMenu}
     >
-      <div className="flex items-center gap-2 cursor-pointer">
+      <div className="flex items-center  gap-2 cursor-pointer">
         Pages <ChevronDown size={16} />
       </div>
 

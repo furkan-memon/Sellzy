@@ -1,40 +1,46 @@
-import React from 'react'
-import Button from './Button'
-import  Home  from './Home'
-import AbouteUs from './AbouteUs'
-import Shop from './Shop'
-import Sellers from './Sellers'
-import MegaMenu from './Megamenu'
-import Blog from './Blog'
-import Pages from './Pages'
-import Contact from './Contact'
-import Support from './Support'
+import React from "react";
+import Button from "./Button";
+import Home from "./Home";
+import AbouteUs from "./AbouteUs";
+import Shop from "./Shop";
+import Sellers from "./Sellers";
+import MegaMenu from "./Megamenu";
+import Blog from "./Blog";
+import Pages from "./Pages";
+import Contact from "./Contact";
+import Support from "./Support";
+
 const Bottamh = () => {
   return (
-   <>
-   <div className='my-4 flex items-center  justify-between ' >
-    <div >
-    <Button />
-    </div>
-    <ui className="flex font-medium list-none gap-5
-     text-[16px] ">
-      <Home />
-      <AbouteUs />
-      <Shop />
-      <Sellers />
-      <MegaMenu />
-      <Blog />
-      <Pages />
-      <Contact />
-    </ui>
-    <div>
-      <Support />
-    </div>
-   </div>
-    <div className="absolute left-1/2  w-screen -translate-x-1/2 border-b border-gray-300"></div>
-    
-    </>
-  )
-}
+    <>
+      {/* FULL-WIDTH NAV (REFERENCE FOR MEGA MENU) */}
+      <nav className="relative w-full border-b border-gray-300">
+        
+        {/* CENTERED CONTENT */}
+        <div className="max-w-[1200px] mx-auto px-4 py-4 flex items-center">
+  
+  <Button />
 
-export default Bottamh
+  {/* CENTER MENU */}
+  <ul className="flex flex-1 justify-center items-center gap-6 text-[16px] font-medium list-none">
+    <Home />
+    <AbouteUs />
+    <Shop />
+    <Sellers />
+    <MegaMenu />
+    <Blog />
+    <Pages />
+    <Contact />
+  </ul>
+
+  <Support />
+
+</div>
+
+
+      </nav>
+    </>
+  );
+};
+
+export default Bottamh;

@@ -2,10 +2,16 @@ import React from 'react'
 import Navbar from './components/Navbar/Navbar'
 const App = () => {
   return (
-    <div className='container mx-auto '>
-     <Navbar />
-    </div>
-  )
-}
+    <>
+  <Navbar />
 
-export default App
+  <main className="container mx-auto px-6">
+    {/* pages */}
+  </main>
+</>
+
+  );
+};
+
+export default App;
+

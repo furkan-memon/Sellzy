@@ -31,7 +31,7 @@ const Shop = () => {
       onMouseEnter={showMenu}
       onMouseLeave={hideMenu}
     >
-      <div className="flex items-center gap-2 cursor-pointer">
+      <div className="flex items-center  gap-2 cursor-pointer">
         Shop <ChevronDown size={16} />
       </div>
 <ShopDropdown  menuRef= {menuRef}/>
