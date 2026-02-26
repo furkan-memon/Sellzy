@@ -3,7 +3,7 @@ import { Search } from "lucide-react";
 
 const Sarchinp = () => {
   return (
-     <div className="relative w-150 ">
+     <div className="relative w-full ">
        
         <input
           type="text"

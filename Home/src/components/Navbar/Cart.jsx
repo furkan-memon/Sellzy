@@ -7,7 +7,7 @@ const Cart = () => {
         <div className='bg-[#ffc107] px-3 py-3 rounded-full'>
         <ShoppingCart size={16} />
         </div>
-        <div className='flex flex-col'>
+        <div className=' flex-col hidden xl:flex'>
             <span className=''>Cart</span>
             <span>0-Items</span>
         </div>

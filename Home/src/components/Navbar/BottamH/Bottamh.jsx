@@ -12,34 +12,35 @@ import Support from "./Support";
 
 const Bottamh = () => {
   return (
-    <>
-      {/* FULL-WIDTH NAV (REFERENCE FOR MEGA MENU) */}
-      <nav className="relative w-full border-b border-gray-300">
+    <nav className="w-full bg-white border-b border-gray-100">
+     
+      <div className="flex items-center justify-between w-full py-0">
         
-        {/* CENTERED CONTENT */}
-        <div className="max-w-[1200px] mx-auto px-4 py-4 flex items-center">
-  
-  <Button />
+        <div className="flex items-center gap-2 lg:gap-8">
+          
+        
+          <div className="flex-shrink-0 hidden xl:flex">
+            <Button />
+          </div>
 
-  {/* CENTER MENU */}
-  <ul className="flex flex-1 justify-center items-center gap-6 text-[16px] font-medium list-none">
-    <Home />
-    <AbouteUs />
-    <Shop />
-    <Sellers />
-    <MegaMenu />
-    <Blog />
-    <Pages />
-    <Contact />
-  </ul>
+          <ul className="hidden xl:flex items-center gap-6 lg:gap-8 text-[15px] font-bold text-[#1A1A1A] tracking-tight list-none whitespace-nowrap">
+            <li className="hover:text-[#00796B] cursor-pointer transition-colors"><Home /></li>
+            <li className="hover:text-[#00796B] cursor-pointer transition-colors"><AbouteUs /></li>
+            <li className="hover:text-[#00796B] cursor-pointer transition-colors"><Shop /></li>
+            <li className="hover:text-[#00796B] cursor-pointer transition-colors"><Sellers /></li>
+            <li className="hover:text-[#00796B] cursor-pointer transition-colors"><MegaMenu /></li>
+            <li className="hover:text-[#00796B] cursor-pointer transition-colors"><Blog /></li>
+            <li className="hover:text-[#00796B] cursor-pointer transition-colors"><Pages /></li>
+            <li className="hover:text-[#00796B] cursor-pointer transition-colors"><Contact /></li>
+          </ul>
+        </div>
 
-  <Support />
+        <div className="hidden xl:block flex-shrink-0">
+          <Support />
+        </div>
 
-</div>
-
-
-      </nav>
-    </>
+      </div>
+    </nav>
   );
 };
 

@@ -27,7 +27,7 @@ const Login = () => {
 
   return (
     <li
-      className="relative inline-block"
+      className="relative   hidden xl:inline-block"
       onMouseEnter={showMenu}
       onMouseLeave={hideMenu}
     >

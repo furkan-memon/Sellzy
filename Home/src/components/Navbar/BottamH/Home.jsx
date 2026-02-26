@@ -27,7 +27,7 @@ const Home = () => {
   };
 
   return (
-    <li
+    <div
       className="relative inline-block"
       onMouseEnter={showMenu}
       onMouseLeave={hideMenu}
@@ -39,7 +39,7 @@ const Home = () => {
       </div>
 
       <HomeDropdown menuRef={menuRef}/>
-    </li>
+    </div>
   );
 };
 

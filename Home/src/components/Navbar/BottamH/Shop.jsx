@@ -26,7 +26,7 @@ const Shop = () => {
   };
 
   return (
-    <li
+    <div
       className="relative"
       onMouseEnter={showMenu}
       onMouseLeave={hideMenu}
@@ -36,7 +36,7 @@ const Shop = () => {
       </div>
 <ShopDropdown  menuRef= {menuRef}/>
       
-    </li>
+    </div>
   );
 };
 

@@ -27,7 +27,7 @@ const Pages = () => {
   };
 
   return (
-    <li
+    <div
       className="relative"
       onMouseEnter={showMenu}
       onMouseLeave={hideMenu}
@@ -37,7 +37,7 @@ const Pages = () => {
       </div>
 
      <PagesDropdown menuRef={menuRef}/>
-    </li>
+    </div>
   );
 };
 
