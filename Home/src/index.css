@@ -1,5 +1,4 @@
 @import "tailwindcss";
-/* The container that creates the "cut-out" look */
 .pagination-notch {
   position: absolute;
   bottom: 0;
@@ -7,25 +6,41 @@
   transform: translateX(-50%);
   z-index: 20;
   background-color: white;
-  padding: 1rem 2.5rem; /* Space around the dots */
+  padding: 1rem 2.5rem; 
   border-top-left-radius: 2.5rem;
   border-top-right-radius: 2.5rem;
-  /* Optional: subtle shadow to make it pop from the background */
   box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.05);
 }
 
-/* Individual dot styling */
+
 .dot {
   width: 8px;
   height: 8px;
   border-radius: 9999px;
-  background-color: #D1D5DB; /* Inactive: gray-300 */
+  background-color: #D1D5DB; 
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
-/* Active "Pill" effect */
+
 .dot-active {
-  width: 32px; /* Expands to a pill shape */
-  background-color: #00796B; /* Sellzy teal color */
+  width: 32px; 
+  background-color: #00796B; 
+}
+@layer base {
+  html {
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+@utility inverted-scoop {
+  position: absolute;
+  right: -50px; 
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-bottom-left-radius: 50px;
+  box-shadow: -20px 20px 0 20px #FFEB69; 
+  pointer-events: none;
 }

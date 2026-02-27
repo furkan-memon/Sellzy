@@ -1,14 +1,24 @@
 import React from 'react';
 
 export const ActionButton = ({ text }) => (
-  <button className="bg-[#00796B] text-white px-8 py-3 rounded-full flex items-center gap-3 w-fit transition-transform active:scale-95">
-    {text}
-    <span className="bg-white/20 group-hover:bg-white group-hover:text-[#00796B] rounded-full p-1 transition-colors">
-      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
-        <path d="M7 17L17 7M17 7H7M17 7V17" strokeLinecap="round" strokeLinejoin="round"/>
-      </svg>
-    </span>
-  </button>
+ <button className="group bg-[#00796B] text-white mt-2 px-5 py-2.5 rounded-full flex items-center gap-2 text-sm font-bold transition-all shadow-md shadow-[#00796B]/20">
+  {text}
+  <span className="bg-white text-[#00796B] rounded-full p-1 transition-transform duration-300 group-hover:rotate-45">
+    <svg
+      width="14"
+      height="14"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="3"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <line x1="7" y1="17" x2="17" y2="7"></line>
+      <polyline points="7 7 17 7 17 17"></polyline>
+    </svg>
+  </span>
+</button>
 );
 
 export const PromoCard = ({ title, subtitle, imageSrc }) => (
