@@ -1,46 +1,40 @@
 @import "tailwindcss";
-.pagination-notch {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 20;
-  background-color: white;
-  padding: 1rem 2.5rem; 
-  border-top-left-radius: 2.5rem;
-  border-top-right-radius: 2.5rem;
-  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.05);
+
+@theme {
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --color-sellzy-teal: #00796B;
 }
 
-
-.dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 9999px;
-  background-color: #D1D5DB; 
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-
-.dot-active {
-  width: 32px; 
-  background-color: #00796B; 
-}
 @layer base {
   html {
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-sans);
+    @apply text-gray-900 antialiased;
   }
 }
 
-@utility inverted-scoop {
+/* ==========================================================
+   THE FOOTER REVERSE "S-CURVE" SCOOP
+   Position this exactly at the top of the teal box.
+========================================================== */
+@utility footer-curve {
   position: absolute;
-  right: -50px; 
-  bottom: 0;
+  top: -50px; /* Must match the curve size */
+  left: 0;
   width: 50px;
   height: 50px;
   background-color: transparent;
   border-bottom-left-radius: 50px;
-  box-shadow: -20px 20px 0 20px #FFEB69; 
+  /* Paint the outside with a shadow to create the scoop. 
+     MATCH THIS COLOR to your page background (#ffffff) */
+  box-shadow: -20px 20px 0 20px var(--color-sellzy-teal); 
   pointer-events: none;
+}
+/* Hide scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
 }
