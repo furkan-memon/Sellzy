@@ -1,10 +1,13 @@
-import React, { useRef } from "react";
+import React, { useRef,useState } from "react";
 import { Lock, ChevronDown, Contact, KeyRound } from "lucide-react";
 import gsap from "gsap";
+import SidePanel from "./Sidepanle";
+import { ForgotPasswordForm, LoginForm, RegisterForm } from "./panle";
+import PanelContent from "./PanelContent";
 
 const Login = () => {
   const menuRef = useRef();
-
+const [panel, setPanel] = useState(null);
   const showMenu = () => {
     gsap.to(menuRef.current, {
       opacity: 1,
@@ -26,6 +29,7 @@ const Login = () => {
   };
 
   return (
+    <>
     <li
       className="relative   hidden xl:inline-block"
       onMouseEnter={showMenu}
@@ -52,43 +56,59 @@ const Login = () => {
       >
         <ul className="py-2  text-sm">
           <li className="px-4 ">
-            <a href="" className="py-2 hover:bg-gray-100 flex items-center gap-2">
+            <sapn  onClick={() => setPanel("login")} className="py-2 cursor-pointer hover:bg-gray-100 flex items-center gap-2">
             <span className="bg-gray-200 p-2 rounded-full">
               <Lock size={10} />
             </span>
             Login
-            </a>
+           </sapn>
           </li>
 
             <li className="px-4">
-            <a href="" className="py-2 hover:bg-gray-100 flex items-center gap-2">
-            <span className="bg-gray-200 p-2 rounded-full">
+            <span onClick={() => setPanel("register")} className="py-2 cursor-pointer hover:bg-gray-100 flex items-center gap-2">
+            <span  className="bg-gray-200 p-2 rounded-full">
               <Contact size={10} />
             </span>
             Register
-            </a>
+            </span>
           </li>
 
            <li className="px-4">
-            <a href="" className="py-2 hover:bg-gray-100 flex items-center gap-2">
-            <span className="bg-gray-200 p-2 rounded-full">
+            <span onClick={() => setPanel("forgot")} className="py-2 cursor-pointer hover:bg-gray-100 flex items-center gap-2">
+            <span  className="bg-gray-200 p-2 rounded-full">
               <KeyRound size={10} />
             </span>
-            Forget Password
-            </a>
+            Forgot Password
+            </span>
           </li>
 
             <li className="px-4">
-            <a href="" className="py-2 hover:bg-gray-100 flex items-center gap-2">
+            <span className="py-2 hover:bg-gray-100 flex items-center gap-2">
             <span className="bg-gray-200 p-2 rounded-full">
               <KeyRound size={10} />
             </span>
             Set Password
-            </a>
+            </span>
           </li>
         </ul>
       </div>
     </li>
+   <SidePanel
+  open={panel !== null}
+  onClose={() => setPanel(null)}
+  title={
+    panel === "login"
+      ? "Log In"
+      : panel === "register"
+      ? "Crteate Your Account"
+      : "Forgot Password"
+  }
+>
+  <PanelContent panel={panel} setPanel={setPanel} />
+</SidePanel>
+
+    </>
+    
   );
 };
 

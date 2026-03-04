@@ -24,7 +24,7 @@ export const ShopDropdown = ({ menuRef }) => {
           <li className="relative group">
           <div className="flex items-center justify-between px-5 py-2.5
                           rounded-md cursor-pointer hover:text-[#088178]">
-            <span>Shop – Wishlist</span>
+            <Link to='Wishlist'>Shop – Wishlist</Link>
             <ChevronRight size={16} className="text-gray-400" />
           </div>
 
@@ -165,7 +165,7 @@ export const BlogDropdown = ({ menuRef }) => {
   return (
      <div
         ref={menuRef}
-        className="absolute left-0 top-full mt-1 min-w-[18rem]
+        className="absolute left-0 top-full  min-w-[18rem]
                    bg-white rounded-lg shadow-lg
                    opacity-0 translate-y-3 pointer-events-none z-999"
       >
@@ -225,12 +225,12 @@ export const PagesDropdown = ({ menuRef }) => {
               </a>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                to="FAQ"
                 className="block px-5 py-2.5 rounded-md hover:text-[#088178] transition"
               >
                 FAQ 
-              </a>
+              </Link>
             </li>
             <li>
               <a

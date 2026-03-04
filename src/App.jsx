@@ -7,6 +7,9 @@ import About from './components/About/About';
 import Footer from './components/Home/footer';
 import Mainfooter from './components/Home/Mainfooter';
 import NotFound from './components/pages/NotFound'
+import FAQHeader from './components/pages/FAQ';
+import Contect from './components/Contect/Contect';
+import Wishlist from './components/Shop/Wishlist';
 const App = () => {
   let neviget = useNavigate()
 const btnClick = () =>{
@@ -20,6 +23,10 @@ const btnClick = () =>{
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/404' element={<NotFound />} />
+        <Route path='/FAQ' element={<FAQHeader />} />
+        <Route path='/Contect' element={<Contect />} />
+        <Route path='/Wishlist' element={<Wishlist />} />
+       
       </Routes>
      <Mainfooter />
     </div>

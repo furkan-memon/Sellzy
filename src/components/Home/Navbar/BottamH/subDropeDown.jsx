@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const PDsubDropdown = () => {
   return (
@@ -79,13 +80,14 @@ export const SwsubDropdown = () => {
     >
       <ul className="py-2 text-sm text-gray-700 list-none">
         <li >
-            <a
-              href="#"
+            <Link
+              to="/Wishlist"
               className="block px-5 py-2.5 rounded-md
                          hover:bg-gray-100 hover:text-[#088178]"
             >
               Shop – Wishlist 
-            </a>
+            </Link>
+            
           </li>
            <li >
             <a
