@@ -7,7 +7,7 @@ import {
   RefreshCw,
 } from "lucide-react";
 const ProductCard = ({products}) => {
-    console.log(products);
+   
     
   return (
    <>

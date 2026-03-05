@@ -26,22 +26,22 @@ export default function Footer() {
     lg:before:absolute
     lg:before:-bottom-30
     lg:before:-left-20
-    lg:before:w-[150px]
+    lg:before:w-[145px]
     lg:before:h-[100%]
     lg:before:bg-[url('/images/shape.png')]
     lg:before:bg-contain
     lg:before:bg-no-repeat 
      lg:after:content-['']
   lg:after:absolute
-  lg:after:-bottom-30
+  lg:after:-bottom-26
   lg:after:-right-20
   lg:after:w-[145px]
   lg:after:h-[100%]
   lg:after:bg-[url('/images/imagecopy.png')]
   lg:after:bg-contain
   lg:after:bg-no-repeat
-      -top-3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-3xl px-6">
-        <div className="bg-white rounded-b-[40px]  text-center py-10 px-8">
+     top-0 md:-top-3 left-1/2 -translate-x-1/2 md:-translate-y-1/2 -translate-y-55 w-full max-w-5xl lg:max-w-3xl px-6">
+        <div className="bg-white md:rounded-b-[40px]  text-center py-10 px-8">
           <h2 className="text-xl font-semibold text-gray-800 mb-3">
             Subscribe to our newsletter
           </h2>
@@ -75,10 +75,8 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* ================= Footer Content ================= */}
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 lg:grid-cols-5 gap-10 pb-16">
 
-        {/* Column 1 */}
         <div>
           <h2 className="text-2xl font-bold text-yellow-400 mb-4">
             Sellzy
@@ -116,7 +114,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Column 2 */}
         <FooterLinks
           title="About"
           links={[
@@ -129,7 +126,6 @@ export default function Footer() {
           ]}
         />
 
-        {/* Column 3 */}
         <FooterLinks
           title="My Account"
           links={[
@@ -142,7 +138,6 @@ export default function Footer() {
           ]}
         />
 
-        {/* Column 4 */}
         <FooterLinks
           title="Categories"
           links={[
@@ -155,7 +150,6 @@ export default function Footer() {
           ]}
         />
 
-        {/* Column 5 */}
         <div>
           <h3 className="text-lg font-semibold mb-4 border-b border-gray-500 pb-2">
             Contact Information's
@@ -185,7 +179,6 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* ================= Copyright ================= */}
       <div className="bg-[#0C4F4F] text-center py-6 text-sm">
         2026 Copyright By Themeforest Powered By Createux
       </div>

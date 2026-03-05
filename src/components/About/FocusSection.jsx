@@ -8,7 +8,6 @@ export default function FocusSection() {
 
         <div className="grid lg:grid-cols-2 gap-16 items-center">
 
-          {/* LEFT IMAGE */}
           <div className="relative">
             <img
               src={modelImg}
@@ -16,7 +15,6 @@ export default function FocusSection() {
               className="w-full h-[520px] object-cover rounded-3xl"
             />
 
-            {/* Play Button */}
             <button className="absolute inset-0 flex items-center justify-center">
               <span className="w-20 h-20 border-8 border-white text-white backdrop-blur-md rounded-full flex items-center justify-center shadow-lg hover:scale-105 transition">
               <a href="https://www.youtube.com/watch?v=rkpzYNB6xks">
@@ -27,21 +25,17 @@ export default function FocusSection() {
             </button>
           </div>
 
-          {/* RIGHT CONTENT */}
           <div>
 
-            {/* Badge */}
             <span className="inline-flex items-center gap-2 bg-green-100 text-green-700 text-xs font-medium px-3 py-1 rounded-full mb-4">
               <span className="w-2 h-2 bg-green-600 rounded-full"></span>
               Features
             </span>
 
-            {/* Heading */}
             <h2 className="text-3xl font-semibold text-gray-900 mb-6">
               Focus on Customer Satisfaction
             </h2>
 
-            {/* Description */}
             <p className="text-gray-600 text-sm leading-relaxed mb-6">
               Experience the ultimate convenience with our Faster Free Delivery service—
               designed to bring your orders to your doorstep quickly and without any extra cost.
@@ -49,7 +43,6 @@ export default function FocusSection() {
               Why You'll Love It:
             </p>
 
-            {/* Bullet Points */}
             <ul className="space-y-4 text-sm text-gray-600 mb-6">
 
               <li className="flex items-start gap-3">

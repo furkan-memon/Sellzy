@@ -17,7 +17,6 @@ export default function TeamSection() {
     <section className="mt-10 py-10">
       <div className="max-w-7xl mx-auto px-6">
 
-        {/* Section Header */}
         <div className="text-center mb-14">
           <h2 className="text-3xl font-semibold text-gray-900 mb-3">
             Meet Our Team
@@ -27,7 +26,6 @@ export default function TeamSection() {
           </p>
         </div>
 
-        {/* Team Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
 
           {team.map((member, index) => (
@@ -35,7 +33,6 @@ export default function TeamSection() {
               key={index}
               className="bg-white border border-gray-200 rounded-[30px] p-4 text-center hover:shadow-md transition"
             >
-              {/* Image */}
               <div className="bg-gray-100 rounded-[25px] p-4 mb-6">
                 <img
                   src={member.img}
@@ -44,17 +41,14 @@ export default function TeamSection() {
                 />
               </div>
 
-              {/* Name */}
               <h4 className="font-semibold text-gray-900">
                 {member.name}
               </h4>
 
-              {/* Role */}
               <p className="text-sm text-gray-500 mt-1 mb-6">
                 {member.role}
               </p>
 
-              {/* Social Icons */}
               <div className="flex justify-center gap-4">
                 <button className="w-10 h-10 bg-[#088178] text-white rounded-full flex items-center justify-center hover:bg-[#056d6e] transition">
                   <Linkedin size={16} />

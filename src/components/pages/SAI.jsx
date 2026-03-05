@@ -6,11 +6,9 @@ export default function SAI() {
   return (
     <section className="relative py-24 bg-white">
 
-      {/* Pink Background */}
       <div className="relative bg-[#FFEB69] md:rounded-[50px] py-24  px-10
       \ max-w-7xl mx-auto " >
 
-        {/* Curved Top Center */}
         <div className="absolute mt-5 lg:mt-0 lg:before:content-['']
     lg:before:absolute
     lg:before:-bottom-4
@@ -43,10 +41,8 @@ export default function SAI() {
 
        <div className="max-w-6xl mx-auto px-6 py-6 grid md:grid-cols-2 gap-8">
 
-        {/* Left Contact Info */}
         <div className="bg-white rounded-2xl p-8 shadow-sm">
 
-          {/* Email */}
           <div className="flex items-start gap-4 pb-6 border-b">
             <div className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center">
               <FaEnvelope className="text-gray-700" />
@@ -57,7 +53,6 @@ export default function SAI() {
             </div>
           </div>
 
-          {/* Phone */}
           <div className="flex items-start gap-4 py-6 border-b">
             <div className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center">
               <FaHeadphones className="text-gray-700" />
@@ -68,7 +63,6 @@ export default function SAI() {
             </div>
           </div>
 
-          {/* Address */}
           <div className="flex items-start gap-4 py-6 border-b">
             <div className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center">
               <FaMapMarkerAlt className="text-gray-700" />
@@ -81,7 +75,6 @@ export default function SAI() {
             </div>
           </div>
 
-          {/* Website */}
           <div className="flex items-start gap-4 pt-6">
             <div className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center">
               <FaGlobe className="text-gray-700" />
@@ -94,7 +87,6 @@ export default function SAI() {
 
         </div>
 
-        {/* Right Contact Form */}
         <div className="bg-white rounded-2xl p-8 shadow-sm">
           <form className="space-y-6">
 

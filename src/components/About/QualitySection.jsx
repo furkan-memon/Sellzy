@@ -6,11 +6,9 @@ export default function QualitySection() {
   return (
     <section className="relative py-24 bg-white">
 
-      {/* Pink Background */}
       <div className="relative bg-[#FFD6EF] md:rounded-[50px] py-24  px-10
       \ max-w-7xl mx-auto " >
 
-        {/* Curved Top Center */}
         <div className="absolute mt-5 lg:mt-0 lg:before:content-['']
     lg:before:absolute
     lg:before:-bottom-4
@@ -41,10 +39,8 @@ export default function QualitySection() {
    
         </div>
 
-        {/* Cards */}
         <div className="mt-6 grid md:grid-cols-3 gap-10">
 
-          {/* Card 1 */}
           <div className="bg-white rounded-2xl shadow-md p-10 text-center transition hover:shadow-lg">
             <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6">
               <Truck size={24} className="text-gray-800" />
@@ -57,7 +53,6 @@ export default function QualitySection() {
             </p>
           </div>
 
-          {/* Card 2 */}
           <div className="bg-white rounded-2xl shadow-md p-10 text-center transition hover:shadow-lg">
             <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6">
               <Headphones size={24} className="text-gray-800" />
@@ -70,7 +65,6 @@ export default function QualitySection() {
             </p>
           </div>
 
-          {/* Card 3 */}
           <div className="bg-white rounded-2xl shadow-md p-10 text-center transition hover:shadow-lg">
             <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6">
               <RotateCcw size={24} className="text-gray-800" />

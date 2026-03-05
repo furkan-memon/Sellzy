@@ -9,26 +9,21 @@ export default function DeliverySection() {
 
         <div className="grid lg:grid-cols-2 gap-16 items-center">
 
-          {/* LEFT CONTENT */}
           <div>
 
-            {/* Badge */}
             <span className="inline-block bg-green-100 text-green-700 text-xs font-medium px-3 py-1 rounded-full mb-4">
               • Features
             </span>
 
-            {/* Heading */}
             <h2 className="text-3xl font-semibold text-gray-900 mb-6">
               Faster Free Delivery
             </h2>
 
-            {/* Description */}
             <p className="text-gray-600 text-sm leading-relaxed mb-6">
               Experience the ultimate convenience with our Faster Free Delivery service—designed to bring your orders to your doorstep quickly and without any extra cost.
               Whether you're ordering essentials or gifts, we make sure you get them faster than ever. Why You'll Love It:
             </p>
 
-            {/* Bullet Points */}
             <ul className="space-y-4 text-sm text-gray-600">
 
               <li className="flex items-start gap-3">
@@ -67,17 +62,13 @@ export default function DeliverySection() {
 
           </div>
 
-          {/* RIGHT IMAGES */}
           <div className="relative flex flex-col xl:flex-row justify-end gap-8">
 
-            {/* Main Image */}
             <img
               src={mainImg}
               alt="delivery app"
               className="xl:w-[380px] xl:h-[500px] w-full h-full object-cover rounded-3xl"
             />
-
-            {/* Side Image */}
             <img
               src={sideImg}
               alt="model"

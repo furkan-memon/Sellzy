@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef,useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import ProductCard from "./productCard";
 
@@ -20,7 +20,34 @@ const products = [...rawProducts, ...rawProducts, ...rawProducts];
 
 const TopOfferSection = () => {
   const scrollRef = useRef(null);
+ const targetDate = new Date("2027-01-01T00:00:00").getTime();
 
+  const [timeLeft, setTimeLeft] = useState({
+    days: "000",
+    hours: "00",
+    minutes: "00",
+    seconds: "00"
+  });
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      const now = new Date().getTime();
+      const difference = targetDate - now;
+
+      if (difference <= 0) {
+        clearInterval(timer);
+      } else {
+        setTimeLeft({
+          days: Math.floor(difference / (1000 * 60 * 60 * 24)).toString().padStart(3, '0'),
+          hours: Math.floor((difference / (1000 * 60 * 60)) % 24).toString().padStart(2, '0'),
+          minutes: Math.floor((difference / 1000 / 60) % 60).toString().padStart(2, '0'),
+          seconds: Math.floor((difference / 1000) % 60).toString().padStart(2, '0')
+        });
+      }
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, [targetDate]);
   useEffect(() => {
     if (scrollRef.current) {
       const cardWidth = 300;
@@ -75,14 +102,16 @@ const TopOfferSection = () => {
   alt="curve shape"
   className="absolute left-[-10px] bottom-0 h-20 w-auto z-10 pointer-events-none"
 />
-          <div className="bg-[#B2FF59]/20 px-4 py-2 rounded-full  border border-[#B2FF59] flex items-center gap-2 font-bold text-gray-800">
-            <span className="text-sm text-gray-500 font-medium">
-              Ends in:
-            </span>
-            <span className="tabular-nums tracking-wider">
-              289 : 00 : 50 : 52
-            </span>
-          </div>
+          <div className="flex justify-center">
+      <div className="bg-[#B2FF59]/20 px-4 py-2 rounded-full border border-[#B2FF59] flex items-center gap-2 font-bold text-gray-800">
+        <span className="text-sm text-gray-500 font-medium">
+          Ends in:
+        </span>
+        <span className="tabular-nums tracking-wider">
+          {timeLeft.days} : {timeLeft.hours} : {timeLeft.minutes} : {timeLeft.seconds}
+        </span>
+      </div>
+    </div>
 
           <div className="flex gap-2">
             <button

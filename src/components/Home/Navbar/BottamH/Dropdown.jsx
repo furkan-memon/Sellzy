@@ -15,7 +15,7 @@ export const ShopDropdown = ({ menuRef }) => {
         <li className="relative group">
           <div className="flex items-center justify-between px-5 py-2.5
                           rounded-md cursor-pointer hover:text-[#088178]">
-            <span>Product Details</span>
+            <Link to='/product-details'>Product Details</Link>
             <ChevronRight size={16} className="text-gray-400" />
           </div>
 
@@ -171,12 +171,12 @@ export const BlogDropdown = ({ menuRef }) => {
       >
         <ul className="py-2 text-sm  text-gray-700">
              <li>
-              <a
-                href="#"
+              <Link
+                to="/Blog"
                 className="block px-5 py-2.5 rounded-md hover:text-[#088178] transition"
               >
                 Blog Grid
-              </a>
+              </Link>
             </li>
              <li>
               <a

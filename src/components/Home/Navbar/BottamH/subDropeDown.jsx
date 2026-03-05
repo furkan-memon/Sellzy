@@ -12,13 +12,13 @@ export const PDsubDropdown = () => {
     >
       <ul className="py-2 text-sm text-gray-700 list-none">
         <li >
-            <a
-              href="#"
+            <Link
+              to="/product-details"
               className="block px-5 py-2.5 rounded-md
                          hover:bg-gray-100 hover:text-[#088178]"
             >
               Product Details Version1
-            </a>
+            </Link>
           </li>
            <li >
             <a

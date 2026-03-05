@@ -37,10 +37,8 @@ const SidePanel = ({ open, onClose, title, children }) => {
 
   return (
     <div className="fixed inset-0 z-50">
-      {/* overlay */}
       <div className="absolute inset-0 bg-black/40" onClick={closePanel} />
 
-      {/* panel */}
       <div
         ref={panelRef}
         className=

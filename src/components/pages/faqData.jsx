@@ -73,7 +73,6 @@ export default function FAQSection() {
   return (
     <section className="py-16  ">
       <div className="max-w-5xl mx-auto px-6">
-        {/* Category Tabs */}
         <div className="flex justify-center gap-6 mb-10">
           {Object.keys(faqData).map((cat) => (
             <button
@@ -94,7 +93,6 @@ export default function FAQSection() {
           ))}
         </div>
 
-        {/* FAQ List */}
         <div className="space-y-6">
           {faqData[category].map((item, index) => (
             <div key={index} className="border-b pb-5">

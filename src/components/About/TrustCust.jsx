@@ -36,11 +36,9 @@ const TrustCust = () => {
   return (
     <section className="relative py-24 bg-white">
 
-      {/* Pink Background */}
       <div className="relative bg-[#A0E2E0] md:rounded-[50px] py-24  px-10
       \ max-w-7xl mx-auto " >
 
-        {/* Curved Top Center */}
         <div className="absolute mt-5 lg:mt-0 lg:before:content-['']
     lg:before:absolute
     lg:before:-bottom-4
@@ -71,7 +69,6 @@ const TrustCust = () => {
    
         </div>
 
-        {/* Cards */}
       <div
           ref={scrollRef}
           className="flex gap-8 overflow-x-auto mt-15 scroll-smooth no-scrollbar"
@@ -81,7 +78,6 @@ const TrustCust = () => {
               key={index}
               className="min-w-[100px] bg-white rounded-[30px] p-8 shadow-sm flex-shrink-0"
             >
-              {/* Header */}
               <div className="flex items-center gap-4 mb-4">
                 <div className="w-14 h-14 bg-gray-100 rounded-full flex items-center justify-center">
                   <User size={22} className="text-gray-400" />
@@ -96,7 +92,6 @@ const TrustCust = () => {
                 </div>
               </div>
 
-              {/* Rating */}
               <div className="flex items-center gap-4 mb-4">
                 <div className="flex gap-1 border-r px-2 border-gray-300 text-yellow-400">
                   {[...Array(4)].map((_, i) => (
@@ -112,7 +107,6 @@ const TrustCust = () => {
                 </div>
               </div>
 
-              {/* Review Text */}
               <p className="text-gray-600 text-wrap text-sm leading-relaxed">
                 {review.text}
               </p>
