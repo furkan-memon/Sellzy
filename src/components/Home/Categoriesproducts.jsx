@@ -35,7 +35,7 @@ const rawProducts = [
   { id: 10, name: "Blush Duo Pink", brand: "L’Oréal Paris", category: "Foundations", price: 20, oldPrice: 25, discount: "20% OFF", rating: 4, img: prod10 },
 ];
 
-const CategoriesProduct = () => {
+const categoriesProduct = () => {
   const [activeTab, setActiveTab] = useState("All Products");
   const scrollRef = useRef(null);
 
