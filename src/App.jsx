@@ -30,9 +30,8 @@ const btnClick = () =>{
         <Route path='/Wishlist' element={<Wishlist />} />
         <Route path='/Blog' element={<BlogPage />} />
         <Route path='/product-details' element={<ProductDetails />} />
-       
       </Routes>
-     <Mainfooter />
+      <Footer />
     </div>
   );
 };
